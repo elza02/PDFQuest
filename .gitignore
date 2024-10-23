@@ -9,6 +9,7 @@ __pycache__/
 # pdf extensions
 *.pdf
 
+*.txt
 
 # Distribution / packaging
 .Python
