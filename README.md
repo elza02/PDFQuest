@@ -49,7 +49,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-Once executed, the system will tokenize the content of the provided PDF file, generate embeddings using the Hugging Face model, and store them in FAISS. The RAG system will then utilize LLaMA 3 through the GROQ API to answer queries based on the content of the PDF.
+Once executed, the system will first convert the content of the provided PDF file to plain text, as Hugging Face embedding models accept only plain text. Next, it will tokenize the plain text, divide it into chunks, and generate embeddings using the Hugging Face model. These embeddings will then be stored in FAISS. Finally, the RAG system will utilize LLaMA 3 through the GROQ API to answer queries based on the content of the PDF.
 
 ## Contributing
 
