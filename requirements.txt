@@ -1,0 +1,7 @@
+langchain-community
+langchain-text-splitters
+groq
+sentence-transformers
+faiss-cpu
+numpy
+json
