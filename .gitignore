@@ -8,7 +8,7 @@ __pycache__/
 
 # pdf extensions
 *.pdf
-
+*.json
 *.txt
 
 # Distribution / packaging
