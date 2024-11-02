@@ -7,7 +7,7 @@ This project implements a Retrieval-Augmented Generation (RAG) system that gener
 ```
 .
 ├── requirements.txt
-├── main.py
+├── RAG_fr_scratch.ipynb
 └── loi-n-01-00-portant-organisation-de-lenseignement-supérieur.pdf
 ```
 
