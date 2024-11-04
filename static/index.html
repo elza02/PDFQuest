@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>RAG Chatbot</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fa-solid fa-book"></i>RAG Chatbot</h1>
+            <p></p>
+        </header>
+        <main>
+            <div class="chat-window" id="chat-window">
+                <div class="messages" id="messages"></div>
+                <div class="loading" id="loading" style="display: none;">Loading...</div>
+            </div>
+            <div class="input-container">
+                <input type="text" id="user-input" placeholder="Type your question here..." />
+                <button id="send-button">Send</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
