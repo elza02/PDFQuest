@@ -51,6 +51,11 @@ pip install -r requirements.txt
 
 Once executed, the system will first convert the content of the provided PDF file to plain text, as Hugging Face embedding models accept only plain text. Next, it will tokenize the plain text, divide it into chunks, and generate embeddings using the Hugging Face model. These embeddings will then be stored in FAISS. Finally, the RAG system will utilize LLaMA 3 through the GROQ API to answer queries based on the content of the PDF.
 
+## Future Enhancements
+- Improved Information Extraction: Enhance the extraction capabilities to better handle images, tables, and graphs within PDF files, enabling more comprehensive data retrieval and analysis.
+- Application Interface: Develop a user-friendly application interface to streamline interactions, allowing users to upload, process, and review extracted information efficiently.
+- Hallucination Mitigation: Implement strategies to reduce AI hallucinations, improving the accuracy and reliability of the extracted information and summaries generated from PDF content.
+
 ## Custom PDF Files
 
 You can easily work with your own PDF files by modifying the path in the code where the PDF is loaded. Just ensure that the PDF file is accessible in your project directory or provide an absolute path to the file.
