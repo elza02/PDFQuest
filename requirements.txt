@@ -5,3 +5,5 @@ sentence-transformers
 faiss-cpu
 numpy
 json
+pydantic
+fastapi
