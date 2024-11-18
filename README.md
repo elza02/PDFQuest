@@ -17,7 +17,6 @@ This project implements a Retrieval-Augmented Generation (RAG) system that gener
 │       └── script.js
 ├── requirements.txt                 # List of project dependencies
 ├── config.json                      # Configuration file for API keys and settings (Groq API)
-├── 
 └── tests/                           # Test suite for the project
     ├── __init__.py                  # Initializes the test module
     ├── test_main.py                 # Unit tests for FastAPI application
