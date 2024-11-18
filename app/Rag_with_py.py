@@ -6,7 +6,7 @@ import faiss
 import numpy as np
 import json
 
-loader = PyPDFLoader("./loi-n-01-00-portant-organisation-de-lenseignement-supérieur.pdf")
+loader = PyPDFLoader("app/loi-n-01-00-portant-organisation-de-lenseignement-supérieur.pdf")
 pages = loader.load_and_split()
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=800, chunk_overlap=80)
 splits = text_splitter.split_documents(pages)
@@ -32,7 +32,7 @@ def retrieving_chunks(query):
     matching_chunks = [text_chunks[i] for i in indices[0]]
     return '/n'.join(matching_chunks)
 
-with open('config.json') as config_file:
+with open('./config.json') as config_file:
     config = json.load(config_file)
     
 api_key = config['api_key']
