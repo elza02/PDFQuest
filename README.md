@@ -10,13 +10,14 @@ This project implements a Retrieval-Augmented Generation (RAG) system that gener
 │   ├── __init__.py                  # Initializes the app module
 │   ├── main.py                      # FastAPI application - main entry point for the API
 │   ├── rag_with_py.py               # RAG logic and chunk retrieval (PDF processing, embedding, FAISS)
+│   ├── loi-n-01-00-portant-organisation-de-lenseignement-supérieur.pdf  # PDF for processing
 │   └── static/                      # Static files (e.g., frontend HTML)
 │       └── index.html               # Frontend HTML for interacting with the API
 │       └── styles.css               
 │       └── script.js
 ├── requirements.txt                 # List of project dependencies
 ├── config.json                      # Configuration file for API keys and settings (Groq API)
-├── loi-n-01-00-portant-organisation-de-lenseignement-supérieur.pdf  # PDF for processing
+├── 
 └── tests/                           # Test suite for the project
     ├── __init__.py                  # Initializes the test module
     ├── test_main.py                 # Unit tests for FastAPI application
