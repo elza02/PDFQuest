@@ -1,8 +1,12 @@
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'app')))
+
 import unittest
 from fastapi.testclient import TestClient
-from app.main import app  # Adjust import if the app structure changes
+import main  # Adjust import if the app structure changes
 
-client = TestClient(app)
+client = TestClient(main.app)
 
 class TestFastAPI(unittest.TestCase):
     def test_root_endpoint(self):
