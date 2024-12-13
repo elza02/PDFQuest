@@ -19,8 +19,10 @@ class QueryRequest(BaseModel):
 async def chat(request: QueryRequest):
     # Process the question (call your RAG model)
     user_question = request.question
+    context = ''
+    if len(user_question) < 5:
     # Generate a response for the demo
-    context = retrieving_chunks(user_question)
+        context = retrieving_chunks(user_question)
     response = llm_generation(user_question, context)
     return JSONResponse({"response": response})
     
